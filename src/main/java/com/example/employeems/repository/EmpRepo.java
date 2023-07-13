@@ -1,4 +1,8 @@
 package com.example.employeems.repository;
 
-public interface EmpRepo {
+import com.example.employeems.entity.Employee;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface EmpRepo extends JpaRepository<Employee,Integer> {
+
 }
