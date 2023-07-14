@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Management System</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body style="">
+
+    <div class="container mt-5 p-3" style="border: 1px solid black; border-radius: 20px;">
+
+        <h2 style="text-decoration: wavy; text-align:center;">Employee <span style="color:blue;">Details</span></h2>
+        <form action="" id="frm">
+            Employee ID: <span style="color:red;">use only for update and delete</span> 
+            <input class="form-control" type="text" placeholder="Employee ID" name="id" id="id" disabled>
+            <span style="color:red;">*</span> Name:
+            <input class="form-control" type="text" placeholder="Employee name" name="name" id="name" required>
+            <span style="color:red;">*</span> Address:
+            <input class="form-control" type="text" placeholder="City, Street" name="address" id="address" required>
+            <span style="color:red;">*</span> Mobile:
+            <input class="form-control" type="text" placeholder="07x-xxxxxxx" name="mobile" id="mobile" required>
+            <div style="text-align:center;">
+            <button type="button" class="btn btn-outline-primary mt-3" id="btnSubmit">Submit</button>
+            <button type="button" class="btn btn-outline-danger mt-3" id="btnDel">Delete</button>
+            <button type="button" class="btn btn-outline-dark mt-3" id="btnUpdate">Update</button>
+            <button type="button" class="btn btn-outline-success mt-3" id="btnSearch">Search</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="container mt-3">
+        <a href="../index.html" style="text-decoration: none;"> Home/</a> employees
+        <table class="table mt-3" id="tbl">
+            <thead>
+              <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Name</th>
+                <th scope="col">Address</th>
+                <th scope="col">Mobile</th>
+              </tr>
+            </thead>
+            <tbody id="tbody">
+             
+            </tbody>
+          </table>
+    </div>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+
+    <script src="JS/employee.js">
+    </script>
+
+</body>
+</html>
